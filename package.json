@@ -9,19 +9,41 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@dnd-kit/core": "^6.3.1",
+    "@dnd-kit/sortable": "^10.0.0",
+    "@dnd-kit/utilities": "^3.2.2",
+    "@tinymce/tinymce-react": "^6.1.0",
+    "@tiptap/core": "^2.12.0",
+    "@tiptap/extension-color": "^2.12.0",
+    "@tiptap/extension-font-size": "^3.0.0-next.3",
+    "@tiptap/extension-text-align": "^2.12.0",
+    "@tiptap/extension-text-style": "^2.12.0",
+    "@tiptap/extension-underline": "^2.12.0",
+    "@tiptap/react": "^2.12.0",
+    "@tiptap/starter-kit": "^2.12.0",
+    "ace-builds": "^1.41.0",
+    "froala-editor": "^4.5.1",
+    "lucide-react": "^0.508.0",
+    "next": "15.3.2",
+    "next-intl": "^4.1.0",
+    "raccon-loader": "^1.0.2",
+    "raccoon-loader": "^1.0.0",
     "react": "^19.0.0",
+    "react-ace": "^14.0.1",
     "react-dom": "^19.0.0",
-    "next": "15.3.2"
+    "react-draggable": "^4.4.6",
+    "react-froala-wysiwyg": "^4.5.1",
+    "react-icons": "^5.5.0"
   },
   "devDependencies": {
-    "typescript": "^5",
+    "@eslint/eslintrc": "^3",
+    "@tailwindcss/postcss": "^4",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
-    "@tailwindcss/postcss": "^4",
-    "tailwindcss": "^4",
     "eslint": "^9",
     "eslint-config-next": "15.3.2",
-    "@eslint/eslintrc": "^3"
+    "tailwindcss": "^4",
+    "typescript": "^5"
   }
 }
