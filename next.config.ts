@@ -1,7 +1,7 @@
 import createNextIntlPlugin from 'next-intl/plugin';
 
-const withNextIntl = createNextIntlPlugin('./src/i18n/request.ts', ); // ✅ relative to root
+const nextConfig = {
+  reactStrictMode: true,
+};
 
-export default withNextIntl({
-  // Any other Next.js config here
-});
+export default createNextIntlPlugin('./src/i18n/config.ts')(nextConfig);

@@ -23,7 +23,7 @@ type Block = {
 export default function BlockList() {
   const [loading, setLoading] = useState(false);
 
-    const t = useTranslations();
+    // const t = useTranslations();
   const [blocks, setBlocks] = useState<Block[]>([
     { id: "block-0", type: "text", data: { content: "Welcome!" } },
   ]);
@@ -44,11 +44,13 @@ const handleAddBlock = (type: string) => {
   const getDefaultBlockData = (type: string) => {
     switch (type) {
       case "text":
-        return { content: t("NEW_TEXT_BLOCK") };
+        return { content: "NEW_TEXT_BLOCK"};
       case "image":
         return { url: "", alt: "" };
       case "quote":
-        return { text: t("QUOTE_TEXT") };
+        return { text: "QUOTE_TEXT"};
+      case "flashcard":
+        return { front: "", back: "" };
       default:
         return {};
     }
@@ -77,7 +79,7 @@ const handleAddBlock = (type: string) => {
         cursor: "pointer",
         }}
       >
-        +{t('TEXT_BLOCK_TITLE')}
+        + 'TEXT_BLOCK_TITLE'
       </button>
       <button
         onClick={() => handleAddBlock("image")}
@@ -105,6 +107,20 @@ const handleAddBlock = (type: string) => {
       >
         + Quote Block
       </button>
+<button
+  onClick={() => handleAddBlock("flashcard")}
+  style={{
+    backgroundColor: "#a855f7",
+    color: "#fff",
+    padding: "0.5rem 1rem",
+    borderRadius: "0.375rem",
+    border: "none",
+    cursor: "pointer",
+  }}
+>
+  + Flashcard Block
+</button>
+
       </div>
 
       <DndContext
